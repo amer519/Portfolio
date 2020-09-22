@@ -3,11 +3,13 @@ import './App.css';
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import NavbarBrand from 'react-bootstrap/NavbarBrand';
+// import NavbarBrand from 'react-bootstrap/NavbarBrand';
 import Nav from 'react-bootstrap/Nav';
 
 import Footer from './components/Footer.js';
 import HomePage from './pages/HomePage.js';
+import AboutPage from './pages/AboutPage.js';
+import ContactPage from './pages/ContactPage.js';
 
 class App extends React.Component {
 
@@ -30,7 +32,7 @@ class App extends React.Component {
         
       },
       contact: {
-        title: 'Hey, feel free to contact me anytime',
+        title: 'Hey, feel free to contact me anytime'
         
       }
     }
@@ -50,11 +52,16 @@ class App extends React.Component {
             <Link className='nav-link' to='/about'>About</Link>
             <Link className='nav-link' to='/contact'>Contact</Link>
 
-            <Route path='/' render={() => <HomePage title={this.state.home.title} />} />
+           
           </Nav>
         </Navbar.Collapse>
 
       </Navbar>
+
+      <Route path='/' exact render={() => <HomePage title={this.state.home.title} subTitile={this.state.home.subTitile} text={this.state.home.text} />} />
+      <Route path='/about' render={() => <AboutPage title={this.state.about.title} /> } />
+      <Route path='/contact' render={() => <ContactPage title={this.state.contact.title} />} />
+
       <Footer />
 
       </Container>
