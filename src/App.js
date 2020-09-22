@@ -7,6 +7,7 @@ import NavbarBrand from 'react-bootstrap/NavbarBrand';
 import Nav from 'react-bootstrap/Nav';
 
 import Footer from './components/Footer.js';
+import HomePage from './pages/HomePage.js';
 
 class App extends React.Component {
 
@@ -48,6 +49,8 @@ class App extends React.Component {
             <Link className='nav-link' to='/'>Home</Link>
             <Link className='nav-link' to='/about'>About</Link>
             <Link className='nav-link' to='/contact'>Contact</Link>
+
+            <Route path='/' render={() => <HomePage title={this.state.home.title} />} />
           </Nav>
         </Navbar.Collapse>
 
