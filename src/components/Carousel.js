@@ -1,8 +1,11 @@
 import React from 'react';
 
-import instagram from '../assets/images/instagram.png'
-import linkedin from '../assets/images/linkedin.png'
-import movieposter from '../assets/images/movieposter.jpg'
+import instagram from '../assets/images/instagram.png';
+import linkedin from '../assets/images/linkedin.png';
+import movieposter from '../assets/images/movieposter.jpg';
+import Card from '../components/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 class Carousel extends React.Component {
 
@@ -12,8 +15,8 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: 'Linkdin',
-                    subTitle: 'Linkdin Account',
+                    title: 'Linkedin',
+                    subTitle: 'Linkedin Account',
                     imgSrc: linkedin,
                     link: 'https://www.linkedin.com/in/amer-fahmy-5269a81a1/',
                     selected: false
@@ -54,15 +57,20 @@ class Carousel extends React.Component {
         })
     }
 
-    makeitems = (items) => {
+    makeItems = (items) => {
         return items.map(item => {
-            return <Card item={item} onClick={(e => this.handleCardClick(item.id, e))} key={item.id} />
+            return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
         })
     }
 
     render() {
         return(
-            <p>Carousel!!!</p>
+            <Container fluid={true}>
+                <Row className='justify-content-around'>
+                    {this.makeItems(this.state.items)}
+
+                </Row>
+            </Container>
         );
     }
 
