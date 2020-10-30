@@ -26,7 +26,7 @@ class Carousel extends React.Component {
                     title: 'Film Doctor',
                     subTitle: 'Movie Review App',
                     imgSrc: movieposter,
-                    link: 'moviereview.com',
+                    link: 'https://github.com/amer519/movie-review',
                     selected: false
                 },
                 {
@@ -34,7 +34,7 @@ class Carousel extends React.Component {
                     title: "Instagram Clone",
                     subTitle: 'Instagram',
                     imgSrc: instagram,
-                    link: 'getlinklater.com',
+                    link: 'https://instagram-clone-756a5.web.app/https:/instagram-clone-756a5.web.app/',
                     selected: false
                 },
             ]
