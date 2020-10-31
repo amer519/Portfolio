@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+
+  
 }
 
 .App-logo {
@@ -36,3 +38,47 @@
     transform: rotate(360deg);
   }
 }
+
+.jumbotron {
+  background-image: url("https://wallpaperxyz.com/wp-content/uploads/Autumn-Wallpaper-Full-HD-Free-Download-Desktop-Wallpaperxyz-dot-Com-36.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 50px;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 100px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  /* position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  
+  background-position: center; */
+
+
+}
+
+.jumbotron h1, p {
+  background-color: #ffffff73;
+  padding: 50px;
+}
+
+.jumbotron h3, p {
+  background-color: #ffffff73;
+  padding: 50px;
+}
+
+.justify-content-around {
+  background-color: #fbeec1;
+}
+
+.border-bottom {
+  background-color: #daad86;
+}
+
+.p-0 {
+  background-color: #fbeec1;
+}
+
