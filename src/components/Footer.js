@@ -13,7 +13,7 @@ function Footer() {
                         Amer Fahmy
                     </Col>
                     <Col className='p-0 d-flex justify-content-end' md={3}>
-                    Made by Amer Fahmy
+                    Made by Amer Fahmy 🦁
                     </Col>
                 </Row>
             </Container>
